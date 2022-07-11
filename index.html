@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuizApp</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="btn-grid">
-            <button class="btn">text1</button>
-            <button class="btn">text2</button>
-            <button class="btn">text3</button>
-            <button class="btn">text4</button>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">text1</button>
+                <button class="btn">text2</button>
+                <button class="btn">text3</button>
+                <button class="btn">text4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">start</button> 
+            <button id="next-btn" class="next-btn btn hide">next</button> 
         </div>
     </div> 
 </body>
